@@ -2,6 +2,7 @@ import os
 import sys
 import config
 
+from flask import Flask
 from flask import render_template
 from flask.json import jsonify
 
