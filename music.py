@@ -1,13 +1,13 @@
 import os
 import sys
 import config
-
+import aiohttp_jinja2
 from flask import Flask, render_template
 from flask.json import jsonify
 
 jam = Flask(__name__)
 
-@jam.route("/")
+@aiohttp_jinja2.template("home.html")
 def jam_():
   return render_template("home.html")
 
