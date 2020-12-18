@@ -9,8 +9,7 @@ jam = Flask(__name__)
 
 @jam.route("/")
 def jam_():
-  return
-render_template("home.html")
+  return render_template("home.html")
 
 @jam.route("/version", methods=["GET"])
 def version():
